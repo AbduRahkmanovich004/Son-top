@@ -8,7 +8,7 @@ let guessGlobal
 let stop = false
 let dict={
     // for varrebilyty
-    "👇 To Hight !": "👇 Balandroq !", 
+    "👇 Too High !": "👇 Balandroq !", 
     "👆 Too Low !": "👆 Pastroq !",
     "You are find 🧠":"Topdingiz 🧠",
     "You are lose  🤦‍♂️🤦‍♀️": "Topolmadingiz  🤦‍♂️🤦‍♀️",
@@ -25,7 +25,7 @@ const lang = () => {
     }
     else if(guessGlobal != kompNum){
         if (guessGlobal<kompNum) document.querySelector(".message").textContent = (isEnglish) ? "👆 Too Low !" : dict["👆 Too Low !"]  ;
-        else  document.querySelector(".message").textContent = (isEnglish) ? "👇 To Hight !" : dict["👇 To Hight !"]  ;
+        else  document.querySelector(".message").textContent = (isEnglish) ? "👇 Too High !" : dict["👇 Too High !"]  ;
     }
 }
 
@@ -68,7 +68,7 @@ document.querySelector(".check").addEventListener("click", ()=>{
     else if(guess != kompNum){
         if (!stop) {
             if (guess<kompNum) document.querySelector(".message").textContent = (isEnglish) ? "👆 Too Low !" : dict["👆 Too Low !"]  ;
-            else  document.querySelector(".message").textContent = (isEnglish) ? "👇 To Hight !" : dict["👇 To Hight !"]  ;
+            else  document.querySelector(".message").textContent = (isEnglish) ? "👇 Too High !" : dict["👇 Too High !"]  ;
             score--
         }
     }
